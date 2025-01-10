@@ -10,7 +10,12 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      [
+        "expo-router",
+        {
+          "origin": "https://www.google.com"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

@@ -60,3 +60,23 @@ adb shell am start -W -a android.intent.action.VIEW -d "deeplink://details/Vlady
 ```
 
 This should open the corresponding screen in your app.
+
+4. **Static Web Export**
+
+To export the static web application, run the following command:  
+```bash
+yarn export
+```
+
+Deploy the contents of the `.dist` folder to your hosting service. After deployment, update the website's URL in the `app.json` file:
+
+```json
+"plugins": [
+  [
+    "expo-router",
+    {
+      "origin": "<YOUR_ORIGIN>"
+    }
+  ]
+]
+```
