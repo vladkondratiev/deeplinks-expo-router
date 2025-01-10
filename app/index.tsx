@@ -1,4 +1,6 @@
+import React from 'react';
 import { Stack, Link } from 'expo-router';
+import { StyleSheet } from 'react-native';
 
 import { Button } from '~/components/Button';
 import { Container } from '~/components/Container';
@@ -10,10 +12,16 @@ export default function Home() {
       <Stack.Screen options={{ title: 'Home' }} />
       <Container>
         <ScreenContent path="app/index.tsx" title="Home" />
-        <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>
-          <Button title="Show Details" />
+        <Link href={'/details/Simon'} asChild>
+          <Button title="Show Details" style={styles.button} />
         </Link>
       </Container>
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  button: {
+    marginHorizontal: 20,
+  },
+})
