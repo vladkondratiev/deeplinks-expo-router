@@ -80,3 +80,9 @@ Deploy the contents of the `.dist` folder to your hosting service. After deploym
   ]
 ]
 ```
+
+5. **Universal Links on IOS**
+
+Follow [these instructions](https://docs.expo.dev/linking/ios-universal-links/) to set up universal links on iOS.
+ 
+Afterward, validate your **Apple App Site Association (AASA)** file using [this validator](https://branch.io/resources/aasa-validator/).
